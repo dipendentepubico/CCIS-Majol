@@ -1,0 +1,28 @@
+requestMap:
+  mandatoRequest:
+    fromMap: FinDACMandatiNomiEntity
+    pathToInfo:
+      mandato.codice:
+        hname: theEntity.mandato.codice
+        htype: string
+      mandato.data:
+        hname: theEntity.mandato.data
+        htype: date
+      mandato.anno:
+        hname: theEntity.mandato.anno
+        htype: integer
+      mandato.beneficiario.codiceFiscale:
+        hname: theEntity.an1.codiceFiscale
+        htype: string
+      mandato.beneficiario.partitaIva:
+        hname: theEntity.an1.dettagli.partitaIva
+        htype: string
+  fatturaElettronicaRequest:
+    fromMap: FelDACImportFattureEntity
+    pathToInfo:
+      fattura.identificativo_sdi:
+        hname: theEntity.flusso.identificativoSdi
+        htype: integer
+      fattura.fattura_elettronica.FatturaElettronicaBody.DatiGenerali.DatiGeneraliDocumento.Numero:
+        hname: theEntity.numero
+        htype: string
